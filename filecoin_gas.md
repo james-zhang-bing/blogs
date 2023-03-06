@@ -1,4 +1,30 @@
-[TOC]
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+- [gas分析整理](#gas分析整理)
+  - [名词解释](#名词解释)
+  - [最大消耗费用](#最大消耗费用)
+  - [基础费用消耗](#基础费用消耗)
+  - [矿工小费](#矿工小费)
+  - [设置的gasLimit过高，导致气体烧掉的gas](#设置的gaslimit过高导致气体烧掉的gas)
+    - [矿工最终受到的惩罚](#矿工最终受到的惩罚)
+  - [返还的气体](#返还的气体)
+  - [gasOutPut中各费用去向](#gasoutput中各费用去向)
+- [系统自动估计相关gas参数](#系统自动估计相关gas参数)
+  - [系统估计feeCap](#系统估计feecap)
+  - [系统预估的GasLimit](#系统预估的gaslimit)
+  - [系统预估矿工小费](#系统预估矿工小费)
+- [baseFee的计算](#basefee的计算)
+- [聚合费](#聚合费)
 
 ------------------------
 

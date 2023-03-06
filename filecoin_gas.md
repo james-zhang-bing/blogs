@@ -210,7 +210,7 @@ $$
 $$
 GasPremium=
 \begin{cases}
-    &{{p_{n-1}+p_n}\over 2}&, \text{（当 $P_{n-1}\neq0 $时）}\\
+    &{ \space{p_{n-1}+p_n}\over 2}&, \text{（当 $P_{n-1}\neq0 $时）}\\
 &1 &,\text{（当$P_{n-1}=0 $时）}
 \end{cases}
 $$
@@ -240,13 +240,13 @@ $$
 
 $$
 \begin{aligned}
-baseFee&=parentBaseFee+{{parentBaseFee \cdot  ({totalLimit \over noOfBlocks}-BlockGasTarget)\over BlockGasTarget}\over BaseFeeMaxChangeDenom}\\
-&=parentBaseFee+{{parentBaseFee \cdot  ({totalLimit \over noOfBlocks}-BlockGasTarget)\over BlockGasTarget\cdot BaseFeeMaxChangeDenom}}\\
+baseFee&=parentBaseFee+{\space{parentBaseFee \cdot  ({totalLimit \over noOfBlocks}-BlockGasTarget)\over BlockGasTarget}\over BaseFeeMaxChangeDenom}\\
+&=parentBaseFee+{\space{parentBaseFee \cdot  ({totalLimit \over noOfBlocks}-BlockGasTarget)\over BlockGasTarget\cdot BaseFeeMaxChangeDenom}}\\
 \text{又因为，}\\
 &BlockGasTarget=5000000000\\
 &BaseFeeMaxChangeDenom=8\\
 \text{即,}\\
-BF_n&=BF_{n-1}+{{BF_{n-1} \cdot  ({TL \over BLKS}-5000000000)\over 5000000000\times 8}}\\
+BF_n&=BF_{n-1}+{\space{BF_{n-1} \cdot  ({TL \over BLKS}-5000000000)\over 5000000000\times 8}}\\
 &=BF_{n-1}+{BF_{n-1} \cdot  ({TL \over BLKS}-5\times 10^9)\over 5\times 10^9\times 8}\\
 &=BF_{n-1}+{BF_{n-1} \cdot  ({TL \over BLKS}-5\times 10^9)\over 4\times 10^{10}}\\
 &=BF_{n-1}\cdot({TL\over BLKS}\cdot 4\times 10^{-10}+{7\over 8})
